@@ -13,6 +13,7 @@ import DeckGL, { GeoJsonLayer } from 'deck.gl';
 import Geocoder from 'react-map-gl-geocoder';
 import { listLogEntries } from '../../API';
 import LogEntryForm from '../UserForm/LogEntryForm';
+require('dotenv').config();
 
 const MyMap = () => {
   const [viewport, setViewport] = useState({
